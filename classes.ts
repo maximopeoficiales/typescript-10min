@@ -35,3 +35,16 @@ pedido
   .build();
 
 console.log(pedido);
+
+class Avenger {
+  constructor(
+    public name: string,
+    public poder: string = "Superfuerza",
+    public sex?: string
+  ) {}
+}
+
+const ironMan = new Avenger("Tony Stark", "Ser Millonario", "M");
+console.log(ironMan);
+
+

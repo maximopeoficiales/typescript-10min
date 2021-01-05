@@ -1,7 +1,7 @@
 interface IAnimal {
   name: string;
   color: string;
-  edad: number;
+  edad?: number;
 }
 
 const dog: IAnimal = {
@@ -18,3 +18,9 @@ class MyComponet implements OnInit {
     throw new Error("Method not implemented.");
   }
 }
+
+const showAnimal = (animal: IAnimal) => {
+  console.log(animal.name, animal.color, animal.edad);
+};
+
+showAnimal(dog);

@@ -6,5 +6,5 @@ const showAvengers = ([spiderman, ironman, hulk]: any) => {
 
 showAvengers(avengers);
 
-const [, , hulk] = avengers;
+const [, , hulk]: string[] = avengers;
 console.log(hulk);
