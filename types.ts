@@ -71,7 +71,7 @@ function fail() {
 
 // Function returning never must not have a reachable end point
 function infiniteLoop(): never {
-  while (true) {}
+  while (true) { }
 }
 
 //si declaro una funcion
@@ -93,3 +93,21 @@ console.log(state);
 function getLength(obj: string | string[]) {
   return obj.length;
 }
+
+export type User = {
+  userId: number;
+  name: string;
+};
+
+export type GetUserApi = {
+  PathParams: {
+    userId: number;
+  };
+  ResponseBody: User;
+};
+
+const getUserApi: GetUserApi["ResponseBody"] = {
+  name: "lkjadlksj",
+  userId: 3,
+}
+console.log(getUserApi);
