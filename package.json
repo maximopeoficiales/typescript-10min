@@ -1,0 +1,30 @@
+{
+  "name": "typescript-10min",
+  "version": "1.0.0",
+  "description": "Typescript conceptos basicos que aprender",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn ./src/index.ts --watch src/**/*.ts",
+    "clean": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximopeoficiales/typescript-10min.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maximopeoficiales/typescript-10min/issues"
+  },
+  "homepage": "https://github.com/maximopeoficiales/typescript-10min#readme",
+  "dependencies": {
+    "typescript": "^4.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^2.0.0"
+  }
+}
