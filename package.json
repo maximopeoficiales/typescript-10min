@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "ts-node-dev --respawn ./src/index.ts --watch src/**/*.ts",
+    "file": "ts-node-dev --respawn ",
     "clean": "rimraf dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
