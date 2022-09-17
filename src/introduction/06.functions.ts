@@ -27,18 +27,7 @@ function printCoord2(pt: { x: number; y: number }) {
 printCoord2({ x: 3, y: 7 });
 
 
-function printName(obj: { first: string; last?: string }) {
-  // Error - might crash if 'obj.last' wasn't provided!
-  // console.log(obj.last.toUpperCase());
-  // Object is possibly 'undefined'.
-  if (obj.last !== undefined) {
-    // OK
-    console.log(obj.last.toUpperCase());
-  }
 
-  // A safe alternative using modern JavaScript syntax:
-  console.log(obj.last?.toUpperCase());
-}
 
 
 const superhero = {
@@ -62,4 +51,7 @@ function infiniteLoop(): never {
   while (true) { }
 }
 
-const sayHello2: Function = (name: string): string => `Hello ${name}`;
+interface Function2 {
+  (name: string, lastName: string): string;
+}
+const sayHello2: Function2 = (name: string, lastName: string): string => `Hello ${name}+${lastName}}`;

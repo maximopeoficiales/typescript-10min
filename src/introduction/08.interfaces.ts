@@ -18,6 +18,7 @@ class MyComponent implements OnInit {
     ngOnInit(): void {
         throw new Error("Method not implemented.");
     }
+    
 }
 
 const showAnimal = (animal: Animal) => {

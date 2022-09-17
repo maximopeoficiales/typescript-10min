@@ -1,10 +1,11 @@
 enum Color {
-    Red = 1,
-    Green,
+    Red,
+    Green = 4,
     Blue,
 }
 
 
+
 console.log({
-    enums: [Color[2], Color.Green],
+    enums: [Color[3], Color.Red],
 });

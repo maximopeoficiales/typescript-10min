@@ -15,4 +15,4 @@ console.log(x[0].substring(1));
 // ERROR
 console.log(x[1].substring(1));
 
-// console.log(x===x1);
+// console.log(x===x1);//false
