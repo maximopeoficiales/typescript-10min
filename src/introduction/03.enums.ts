@@ -6,5 +6,5 @@ enum Color {
 
 
 console.log({
-    enums: [Color[3], Color.Green],
+    enums: [Color[2], Color.Green],
 });
