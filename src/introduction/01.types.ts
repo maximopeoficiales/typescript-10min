@@ -26,3 +26,9 @@ name = true;
 // array
 let list: number[] = [1, 2, 3];
 let list2: Array<number> = [1, 2, 3];
+
+
+// Aserciones
+const value: unknown = "Hello World";
+const someString: string = value as string;
+const otherString = someString.toUpperCase();
